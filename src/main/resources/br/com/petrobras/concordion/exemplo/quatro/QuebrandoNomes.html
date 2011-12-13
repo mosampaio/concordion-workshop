@@ -1,0 +1,20 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <body>
+        <h1>Sistema XPTO</h1>
+        <h2>Especificacao 1.4 - Quebrando nomes</h2>
+        <p>
+            Para personalizar os e-mails, deve-se ter o nome e o ultimo sobrenome do cliente.
+            Porem, o sistema apenas armazena o nome completo do cliente.
+        </p>
+        <p>
+            O sistema deve ter uma funcionalidade para "quebrar" o nome da pessoa em nome e ultimo sobrenome.
+        </p>
+        
+        Exemplo:
+        <div class="example">
+            O nome completo <span concordion:execute="#result = nomeTest(#TEXT)">Marcos Oliveira Sampaio</span>
+            deve ter <span concordion:assertEquals="#result.nome">Marcos</span> como nome
+            e <span concordion:assertEquals="#result.ultimoSobreNome">Sampaio</span> como último sobrenome.
+        </div>
+    </body>
+</html>

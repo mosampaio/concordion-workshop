@@ -1,0 +1,25 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <body>
+        <h1>Sistema XPTO</h1>
+        <h2>Especificacao 1.3 - Bem vindo</h2>
+        <p>
+            Visando melhorar a usuabilidade do sistema, deve-se exibir uma mensagem de boas vindas 
+            após o usuário mesmo efetuar o login.
+        </p>
+        
+        Exemplos:
+        <div class="example">
+            Dado que: Sou um usuario chamado <span concordion:set="#nome">João</span> do sexo <span concordion:set="#sexo">MASCULINO</span>
+            <br/>
+            Quando: Ao logar no sistema
+            <br/>
+            Entao: A mensagem <span concordion:assertEquals="bemVindoTest(#nome, #sexo)">João, seja bem-vindo!</span> deve ser exibida.
+            <hr/>
+            Dado que: Sou um usuario chamado <span concordion:set="#nome">Maria</span> do sexo <span concordion:set="#sexo">FEMININO</span>
+            <br/>
+            Quando: Ao logar no sistema
+            <br/>
+            Entao: A mensagem <span concordion:assertEquals="bemVindoTest(#nome, #sexo)">Maria, seja bem-vinda!</span> deve ser exibida.
+        </div>
+    </body>
+</html>

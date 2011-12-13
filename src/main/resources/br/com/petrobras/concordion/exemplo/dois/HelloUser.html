@@ -1,0 +1,19 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <body>
+        <h1>Sistema XPTO</h1>
+        <h2>Especificacao 1.2 - Hello User</h2>
+        <p>
+            Visando melhorar a usuabilidade do sistema, deve-se exibir uma mensagem de boas vindas 
+            após o usuário mesmo efetuar o login.
+        </p>
+
+        Exemplos:
+        <div class="example">
+            Given (Dado que): Sou um usuario chamado <span concordion:set="#nome">Marcos</span>
+            <br/>
+            When (Quando): Ao logar no sistema
+            <br/>
+            Then (Entao): A mensagem <span concordion:assertEquals="helloTest(#nome)">Hello Marcos</span> deve ser exibida.
+        </div>
+    </body>
+</html>

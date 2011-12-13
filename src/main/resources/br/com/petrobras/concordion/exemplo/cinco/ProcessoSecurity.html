@@ -1,0 +1,60 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <body>
+        <h1>Sistema XPTO</h1>
+        <h2>Especificacao 1.5 - Excluir Processo Juridico</h2>
+        <p>
+            Para excluir um processo juridico, é necessario atender pelo menos um dos seguintes requisitos:
+            <ul>
+                <li>Ter o perfil de administrador e o processo nao pode ter o status finalizado;</li>
+                <li>Ter o perfil de cadastrador, ter cadastrado o processo, e o processo deve ter o status criado;</li>
+            </ul>
+        </p>
+        
+        <p>
+            Obs.:
+            <br/>
+            Perfis: administrador, cadastrador e cliente;
+            <br/>
+            Status do processo: criado, em andamento e finalizado;
+        </p>
+        
+        <div class="example">
+            <h3>Exemplos:</h3>
+            <table concordion:execute="#result = isPossivelExcluirProcessoTest(#teste, #perfil, #chaveUsuarioLogado, #chaveUsuarioCadastradorDoProcesso, #statusDoProcesso)">
+                <tr>
+                    <th concordion:set="#teste">Teste</th>
+                    <th concordion:set="#perfil">Perfil</th>
+                    <th concordion:set="#chaveUsuarioLogado">Chave do usuario logado</th>
+                    <th concordion:set="#chaveUsuarioCadastradorDoProcesso">Chave do usuario cadastrador do processo</th>
+                    <th concordion:set="#statusDoProcesso">Status Do Processo</th>
+                    <th concordion:assertEquals="#result">Eh possivel excluir?</th>
+                </tr>
+                <tr>
+                    <td>1.0</td>
+                    <td>ADMINISTRADOR</td>
+                    <td>X450</td>
+                    <td>X4OS</td>
+                    <td>CRIADO</td>
+                    <td>SIM</td>
+                </tr>
+                <tr>
+                    <td>2.2</td>
+                    <td>ADMINISTRADOR</td>
+                    <td>X450</td>
+                    <td>X4ZN</td>
+                    <td>EM_ANDAMENTO</td>
+                    <td>SIM</td>
+                </tr>
+                <tr>
+                    <td>3.9</td>
+                    <td>ADMINISTRADOR</td>
+                    <td>X450</td>
+                    <td>X45A</td>
+                    <td>FINALIZADO</td>
+                    <td>NAO</td>
+                </tr>
+            </table>
+
+        </div>
+    </body>
+</html>
