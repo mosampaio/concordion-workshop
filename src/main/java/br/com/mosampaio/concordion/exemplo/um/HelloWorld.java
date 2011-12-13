@@ -1,4 +1,4 @@
-package br.com.petrobras.concordion.exemplo.um;
+package br.com.mosampaio.concordion.exemplo.um;
 
 
 public class HelloWorld {

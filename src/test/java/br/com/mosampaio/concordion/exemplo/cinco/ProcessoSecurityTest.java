@@ -1,4 +1,4 @@
-package br.com.petrobras.concordion.exemplo.cinco;
+package br.com.mosampaio.concordion.exemplo.cinco;
 
 import org.concordion.integration.junit4.ConcordionRunner;
 import org.junit.runner.RunWith;

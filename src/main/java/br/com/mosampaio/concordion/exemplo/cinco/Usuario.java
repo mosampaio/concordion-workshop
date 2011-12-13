@@ -1,4 +1,4 @@
-package br.com.petrobras.concordion.exemplo.cinco;
+package br.com.mosampaio.concordion.exemplo.cinco;
 
 public class Usuario {
     private String chave;

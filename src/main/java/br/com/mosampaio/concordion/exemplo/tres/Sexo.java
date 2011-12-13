@@ -1,4 +1,4 @@
-package br.com.petrobras.concordion.exemplo.tres;
+package br.com.mosampaio.concordion.exemplo.tres;
 
 public enum Sexo {
 

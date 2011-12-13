@@ -1,4 +1,4 @@
-package br.com.petrobras.concordion.exemplo.dois;
+package br.com.mosampaio.concordion.exemplo.dois;
 
 public class HelloUser {
     

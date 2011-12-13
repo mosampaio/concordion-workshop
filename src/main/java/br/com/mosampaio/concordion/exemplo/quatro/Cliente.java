@@ -1,4 +1,4 @@
-package br.com.petrobras.concordion.exemplo.quatro;
+package br.com.mosampaio.concordion.exemplo.quatro;
 
 public class Cliente {
     private String nomeCompleto;
