@@ -13,11 +13,11 @@ public class ProcessoSecurity {
     //</editor-fold>
 
     public boolean isPossivelExcluirProcesso() {
-//        if (usuarioLogado.getPerfil().isAdministrador() && !processo.getStatus().isFinalizado()){
-//            return true;
-//        } else if (usuarioLogado.getPerfil().isCadastrador() && processo.getStatus().isCriado()) {
-//            return true;
-//        }
+        if (usuarioLogado.getPerfil().isAdministrador() && !processo.getStatus().isFinalizado()){
+            return true;
+        } else if (usuarioLogado.getPerfil().isCadastrador() && processo.getStatus().isCriado()) {
+            return true;
+        }
         return false;
     }
     
