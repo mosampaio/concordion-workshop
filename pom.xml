@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
 
     <name>concordion-workshop</name>
-    <url>http://maven.apache.org</url>
+    <url>https://github.com/mosampaio/concordion-workshop</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
